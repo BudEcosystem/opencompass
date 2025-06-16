@@ -26,6 +26,7 @@ def get_data_path(dataset_id: str, local_mode: bool = False):
     # For relative path, with CACHE_DIR
     if local_mode:
         local_path = os.path.join(cache_dir, dataset_id)
+        print(local_path)
         if not os.path.exists(local_path):
             return download_dataset(local_path, cache_dir)
         else:

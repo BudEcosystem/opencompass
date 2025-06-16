@@ -59,6 +59,7 @@ from .govrepcrs import *  # noqa: F401, F403
 from .gpqa import *  # noqa: F401, F403
 from .gsm8k import *  # noqa: F401, F403
 from .gsm_hard import *  # noqa: F401, F403
+from .healthbench import *  # noqa: F401, F403
 from .hellaswag import *  # noqa: F401, F403
 from .hle import *  # noqa: F401, F403
 from .huggingface import *  # noqa: F401, F403
@@ -159,6 +160,7 @@ from .tnews import *  # noqa: F401, F403
 from .triviaqa import *  # noqa: F401, F403
 from .triviaqarc import *  # noqa: F401, F403
 from .truthfulqa import *  # noqa: F401, F403
+from .tweeteval import * # noqa: F401, F403
 from .tydiqa import *  # noqa: F401, F403
 from .wic import *  # noqa: F401, F403
 from .wikibench import *  # noqa: F401, F403

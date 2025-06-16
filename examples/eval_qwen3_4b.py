@@ -7,9 +7,10 @@ from opencompass.tasks import OpenICLInferTask
 
 with read_base():
     # choose a list of datasets
-    from opencompass.configs.datasets.collections.chat_medium import datasets
+    # from opencompass.configs.datasets.gsm8k.gsm8k_gen import gsm8k_datasets as datasets
     # and output the results in a choosen format
-    from opencompass.configs.summarizers.medium import summarizer
+    # from opencompass.configs.summarizers.medium import summarizer
+    from opencompass.configs.datasets.tweeteval.tweeteval_gen import tweeteval_datasets as datasets
 
 api_meta_template = dict(round=[
     dict(role='HUMAN', api_role='HUMAN'),
@@ -18,7 +19,7 @@ api_meta_template = dict(round=[
 
 models = [
     dict(
-        abbr='Qwen3-4b',
+        abbr='qwen3-4b',
         type=OpenAI,
         path='qwen3-4b',
         key=
@@ -27,6 +28,7 @@ models = [
         query_per_second=1,
         max_out_len=2048,
         max_seq_len=4096,
+        tokenizer_path='Qwen/Qwen3-4B',
         batch_size=8),
 ]
 

@@ -33,6 +33,7 @@ class BaseDataset:
         else:
             self.dataset = DatasetDict()
             for key in dataset:
+                print(key)
                 dataset[key] = dataset[key].map(lambda x, idx: {
                     'subdivision': f'{abbr}_{key}',
                     'idx': idx

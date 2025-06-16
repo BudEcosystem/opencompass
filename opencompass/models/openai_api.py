@@ -281,6 +281,9 @@ class OpenAI(BaseAPIModel):
                     url = self.url
 
                 if self.proxy_url is None:
+                    self.logger.info(url)
+                    self.logger.info(header)
+                    self.logger.info(data)
                     raw_response = requests.post(url,
                                                  headers=header,
                                                  data=json.dumps(data))

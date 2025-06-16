@@ -466,6 +466,15 @@ DATASETS_MAPPING = {
         "hf_id": "",
         "local": "./data/medbullets/medbullets.csv",
     },
+    "opencompass/healthbench": {
+        "ms_id": "",
+        "hf_id": "",
+        "local": "./data/healthbench",
+    },
+    'tweeteval': {
+        'local': './data/tweeteval_sentiment.jsonl',
+        'hf_id': 'cardiffnlp/tweet_eval/sentiment',
+    }
 
 }
 
@@ -835,5 +844,10 @@ DATASETS_URL = {
     "medbullets": {
         "url": "http://opencompass.oss-cn-shanghai.aliyuncs.com/datasets/data/medbullets.zip",
         "md5": "b63130999c1f28d57acba1c7852639f8",
+    },
+    ## TO-DO: Update the url after combining the dataset json files.
+    "healthbench": {
+        "url": "http://opencompass.oss-cn-shanghai.aliyuncs.com/datasets/data/healthbench.zip",
+        "md5": "placeholder_md5_healthbench",
     },
 }

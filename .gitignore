@@ -133,3 +133,5 @@ turbomind/
 
 # aliyun
 core.*
+miniforge3/*
+Miniforge3-Linux*.sh
